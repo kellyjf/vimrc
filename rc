@@ -1,0 +1,6 @@
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile app_*.py 0r ~/.vim/templates/app_.py
+  augroup END
+endif
+
