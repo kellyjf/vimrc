@@ -3,4 +3,5 @@ if has("autocmd")
     autocmd BufNewFile app_*.py 0r ~/.vim/templates/app_.py
   augroup END
 endif
-
+let mapleader="-"
+nnoremap <leader>t ma:%s/ *	*$//<CR>'a
