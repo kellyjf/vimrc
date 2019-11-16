@@ -1,6 +1,9 @@
 
+NHOME := $(HOME)/.config/nvim
+
 install:
+	mkdir -p $(NHOME)/.config/nvim/
 	cp $(HOME)/.vim/rc $(HOME)/.vimrc
-	cp $(HOME)/.vim/init.vim $(HOME)/.config/nvim/init.vim
+	cp  -r $(HOME)/.vim/init.vim autoload $(NHOME)/
 
 
