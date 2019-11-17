@@ -1,16 +1,16 @@
 let mapleader="-"
 nnoremap <leader>t ma:%s/ *	*$//<CR> <bar> :noh<CR>'a
-nnoremap <leader>ev :vsplit $HOME/.vim/rc<CR> 
-nnoremap <leader>sv :source $HOME/.vim/rc<CR> 
+nnoremap <leader>ev :vsplit $HOME/.vim/rc<CR>
+nnoremap <leader>sv :source $HOME/.vim/rc<CR>
 
 call plug#begin("~/.vim/plugged")
-Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdTree'
 Plug 'airblade/vim-gitgutter'
-"Plug 'bling/vim-airline'
-"Plug 'w0rp/ale'
+Plug 'bling/vim-airline'
 call plug#end()
 
+"Plug 'itchyny/lightline.vim'
+"Plug 'w0rp/ale'
 
 if has("autocmd")
   augroup templates
