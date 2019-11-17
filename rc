@@ -1,7 +1,21 @@
+let mapleader="-"
+nnoremap <leader>t ma:%s/ *	*$//<CR> <bar> :noh<CR>'a
+nnoremap <leader>ev :vsplit $HOME/.vim/rc<CR> 
+nnoremap <leader>sv :source $HOME/.vim/rc<CR> 
+
+call plug#begin("~/.vim/plugged")
+Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdTree'
+Plug 'airblade/vim-gitgutter'
+"Plug 'bling/vim-airline'
+"Plug 'w0rp/ale'
+call plug#end()
+
+
 if has("autocmd")
   augroup templates
     autocmd BufNewFile app_*.py 0r ~/.vim/templates/app_.py
   augroup END
 endif
-let mapleader="-"
-nnoremap <leader>t ma:%s/ *	*$//<CR>'a
+
+nnoremap <leader>n :NERDTreeToggle<CR>
