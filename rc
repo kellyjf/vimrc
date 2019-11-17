@@ -6,6 +6,7 @@ nnoremap <leader>sv :source $HOME/.vim/rc<CR>
 call plug#begin("~/.vim/plugged")
 Plug 'scrooloose/nerdTree'
 Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-fugitive'
 Plug 'bling/vim-airline'
 call plug#end()
 
